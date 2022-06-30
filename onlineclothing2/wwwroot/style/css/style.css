@@ -225,8 +225,13 @@ button.w3view-cart:focus{
 	background-size: cover;
 	min-height: 480px;
 }
-.my-banner3 {
-	background: url(../style/images/clothsbanner.jpg) no-repeat 0px 0px;
+.my-banner5 {
+	background: url(../images/ethnicwear.jpg) no-repeat 0px 0px;
+	background-size: cover;
+	min-height: 480px;
+}
+	.my-banner3 {
+	background: url(../images/menbanner.jpg) no-repeat 0px 0px;
 	background-size: cover;
 	min-height: 480px;
 }

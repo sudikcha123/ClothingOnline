@@ -28,56 +28,17 @@
     <None Include="wwwroot\style\images\7.png" />
     <None Include="wwwroot\style\images\a1.jpg" />
     <None Include="wwwroot\style\images\a2.jpg" />
-    <None Include="wwwroot\style\images\a3.jpg" />
     <None Include="wwwroot\style\images\a4.jpg" />
     <None Include="wwwroot\style\images\abtbtm.jpg" />
     <None Include="wwwroot\style\images\banner2.jpg" />
     <None Include="wwwroot\style\images\bb1.jpg" />
-    <None Include="wwwroot\style\images\bb2.jpg" />
     <None Include="wwwroot\style\images\bb3.jpg" />
-    <None Include="wwwroot\style\images\bb4.jpg" />
     <None Include="wwwroot\style\images\bb5.jpg" />
     <None Include="wwwroot\style\images\c1.png" />
     <None Include="wwwroot\style\images\c2.png" />
     <None Include="wwwroot\style\images\c3.png" />
     <None Include="wwwroot\style\images\cap1.jpg" />
     <None Include="wwwroot\style\images\clothsbanner.jpg" />
-    <None Include="wwwroot\style\images\cp1.jpg" />
-    <None Include="wwwroot\style\images\cp2.jpg" />
-    <None Include="wwwroot\style\images\cp3.jpg" />
-    <None Include="wwwroot\style\images\cp4.jpg" />
-    <None Include="wwwroot\style\images\cp5.jpg" />
-    <None Include="wwwroot\style\images\cp6.jpg" />
-    <None Include="wwwroot\style\images\cp7.jpg" />
-    <None Include="wwwroot\style\images\cp8.jpg" />
-    <None Include="wwwroot\style\images\cp9.jpg" />
-    <None Include="wwwroot\style\images\dp1.jpg" />
-    <None Include="wwwroot\style\images\dp2.jpg" />
-    <None Include="wwwroot\style\images\dp3.jpg" />
-    <None Include="wwwroot\style\images\dp4.jpg" />
-    <None Include="wwwroot\style\images\dp5.jpg" />
-    <None Include="wwwroot\style\images\dp6.jpg" />
-    <None Include="wwwroot\style\images\dp7.jpg" />
-    <None Include="wwwroot\style\images\dp8.jpg" />
-    <None Include="wwwroot\style\images\dp9.jpg" />
-    <None Include="wwwroot\style\images\hcp1.jpg" />
-    <None Include="wwwroot\style\images\hcp2.jpg" />
-    <None Include="wwwroot\style\images\hcp3.jpg" />
-    <None Include="wwwroot\style\images\hcp4.jpg" />
-    <None Include="wwwroot\style\images\hcp5.jpg" />
-    <None Include="wwwroot\style\images\hcp6.jpg" />
-    <None Include="wwwroot\style\images\hcp7.jpg" />
-    <None Include="wwwroot\style\images\hcp8.jpg" />
-    <None Include="wwwroot\style\images\hcp9.jpg" />
-    <None Include="wwwroot\style\images\hp1.jpg" />
-    <None Include="wwwroot\style\images\hp2.jpg" />
-    <None Include="wwwroot\style\images\hp3.jpg" />
-    <None Include="wwwroot\style\images\hp4.jpg" />
-    <None Include="wwwroot\style\images\hp5.jpg" />
-    <None Include="wwwroot\style\images\hp6.jpg" />
-    <None Include="wwwroot\style\images\hp7.jpg" />
-    <None Include="wwwroot\style\images\hp8.jpg" />
-    <None Include="wwwroot\style\images\hp9.jpg" />
     <None Include="wwwroot\style\images\img-sprite.png" />
     <None Include="wwwroot\style\images\ip1.jpg" />
     <None Include="wwwroot\style\images\ip2.jpg" />
@@ -88,15 +49,6 @@
     <None Include="wwwroot\style\images\ip7.jpg" />
     <None Include="wwwroot\style\images\ip8.jpg" />
     <None Include="wwwroot\style\images\ip9.jpg" />
-    <None Include="wwwroot\style\images\jp1.jpg" />
-    <None Include="wwwroot\style\images\jp2.jpg" />
-    <None Include="wwwroot\style\images\jp3.jpg" />
-    <None Include="wwwroot\style\images\jp4.jpg" />
-    <None Include="wwwroot\style\images\jp5.jpg" />
-    <None Include="wwwroot\style\images\jp6.jpg" />
-    <None Include="wwwroot\style\images\jp7.jpg" />
-    <None Include="wwwroot\style\images\jp8.jpg" />
-    <None Include="wwwroot\style\images\jp9.jpg" />
     <None Include="wwwroot\style\images\kp1.jpg" />
     <None Include="wwwroot\style\images\kp2.jpg" />
     <None Include="wwwroot\style\images\kp3.jpg" />
@@ -109,7 +61,6 @@
     <None Include="wwwroot\style\images\logo2.png" />
     <None Include="wwwroot\style\images\menbanner.jpg" />
     <None Include="wwwroot\style\images\menu1.jpg" />
-    <None Include="wwwroot\style\images\menu2.jpg" />
     <None Include="wwwroot\style\images\mp1.jpg" />
     <None Include="wwwroot\style\images\mp2.jpg" />
     <None Include="wwwroot\style\images\mp3.jpg" />
@@ -129,19 +80,12 @@
     <None Include="wwwroot\style\images\np8.jpg" />
     <None Include="wwwroot\style\images\np9.jpg" />
     <None Include="wwwroot\style\images\offer.jpg" />
-    <None Include="wwwroot\style\images\offer10.jpg" />
     <None Include="wwwroot\style\images\offer11.jpg" />
     <None Include="wwwroot\style\images\offer12.jpg" />
     <None Include="wwwroot\style\images\offer13.jpg" />
     <None Include="wwwroot\style\images\offer14.jpg" />
     <None Include="wwwroot\style\images\offer2.jpg" />
     <None Include="wwwroot\style\images\offer3.jpg" />
-    <None Include="wwwroot\style\images\offer4.jpg" />
-    <None Include="wwwroot\style\images\offer5.jpg" />
-    <None Include="wwwroot\style\images\offer6.jpg" />
-    <None Include="wwwroot\style\images\offer7.jpg" />
-    <None Include="wwwroot\style\images\offer8.jpg" />
-    <None Include="wwwroot\style\images\offer9.jpg" />
     <None Include="wwwroot\style\images\pp1.jpg" />
     <None Include="wwwroot\style\images\pp2.jpg" />
     <None Include="wwwroot\style\images\pp3.jpg" />
@@ -151,56 +95,16 @@
     <None Include="wwwroot\style\images\pp7.jpg" />
     <None Include="wwwroot\style\images\pp8.jpg" />
     <None Include="wwwroot\style\images\pp9.jpg" />
-    <None Include="wwwroot\style\images\rec1.jpg" />
-    <None Include="wwwroot\style\images\rec2.jpg" />
-    <None Include="wwwroot\style\images\rec3.jpg" />
-    <None Include="wwwroot\style\images\shp1.jpg" />
-    <None Include="wwwroot\style\images\shp2.jpg" />
-    <None Include="wwwroot\style\images\shp3.jpg" />
-    <None Include="wwwroot\style\images\shp4.jpg" />
-    <None Include="wwwroot\style\images\shp5.jpg" />
-    <None Include="wwwroot\style\images\shp6.jpg" />
-    <None Include="wwwroot\style\images\shp7.jpg" />
-    <None Include="wwwroot\style\images\shp8.jpg" />
-    <None Include="wwwroot\style\images\shp9.jpg" />
-    <None Include="wwwroot\style\images\sp1.jpg" />
-    <None Include="wwwroot\style\images\sp2.jpg" />
-    <None Include="wwwroot\style\images\sp3.jpg" />
-    <None Include="wwwroot\style\images\sp4.jpg" />
-    <None Include="wwwroot\style\images\sp5.jpg" />
-    <None Include="wwwroot\style\images\sp6.jpg" />
-    <None Include="wwwroot\style\images\sp7.jpg" />
-    <None Include="wwwroot\style\images\sp8.jpg" />
-    <None Include="wwwroot\style\images\sp9.jpg" />
     <None Include="wwwroot\style\images\t1.jpg" />
     <None Include="wwwroot\style\images\t2.jpg" />
     <None Include="wwwroot\style\images\t3.jpg" />
     <None Include="wwwroot\style\images\t4.jpg" />
-    <None Include="wwwroot\style\images\tp1.jpg" />
-    <None Include="wwwroot\style\images\tp10.jpg" />
-    <None Include="wwwroot\style\images\tp11.jpg" />
-    <None Include="wwwroot\style\images\tp12.jpg" />
-    <None Include="wwwroot\style\images\tp13.jpg" />
-    <None Include="wwwroot\style\images\tp14.jpg" />
-    <None Include="wwwroot\style\images\tp15.jpg" />
-    <None Include="wwwroot\style\images\tp16.jpg" />
     <None Include="wwwroot\style\images\tp2.jpg" />
     <None Include="wwwroot\style\images\tp3.jpg" />
-    <None Include="wwwroot\style\images\tp4.jpg" />
     <None Include="wwwroot\style\images\tp5.jpg" />
     <None Include="wwwroot\style\images\tp6.jpg" />
     <None Include="wwwroot\style\images\tp7.jpg" />
     <None Include="wwwroot\style\images\tp8.jpg" />
-    <None Include="wwwroot\style\images\tp9.jpg" />
-    <None Include="wwwroot\style\images\wap1.jpg" />
-    <None Include="wwwroot\style\images\wap2.jpg" />
-    <None Include="wwwroot\style\images\wap3.jpg" />
-    <None Include="wwwroot\style\images\wap4.jpg" />
-    <None Include="wwwroot\style\images\wap5.jpg" />
-    <None Include="wwwroot\style\images\wap6.jpg" />
-    <None Include="wwwroot\style\images\wap7.jpg" />
-    <None Include="wwwroot\style\images\wap8.jpg" />
-    <None Include="wwwroot\style\images\wap9.jpg" />
     <None Include="wwwroot\style\images\wish1.jpg" />
     <None Include="wwwroot\style\images\wish2.jpg" />
     <None Include="wwwroot\style\images\wish3.jpg" />
@@ -221,6 +125,25 @@
     <None Include="wwwroot\style\js\jquery.flexslider.js" />
     <None Include="wwwroot\style\js\jquery.wmuSlider.js" />
     <None Include="wwwroot\style\js\minicart.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Session" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.jQuery.Unobtrusive.Ajax" Version="3.2.6" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.5" />
+    <PackageReference Include="MySql.EntityFrameworkCore" Version="6.0.1" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="6.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="NewFolder\" />
+    <Folder Include="wwwroot\images\productimage\" />
   </ItemGroup>
 
 </Project>

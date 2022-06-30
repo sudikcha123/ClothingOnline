@@ -1,4 +1,9 @@
-﻿<!--A Design by W3layouts
+﻿@using Microsoft.AspNetCore.Http;
+
+@using onlineclothing2.Helpers;
+@using onlineclothing2.Models;
+
+<!--A Design by W3layouts
 Author: W3layout
 Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
@@ -53,6 +58,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<span class="icon-bar"></span>
 					</button>
 				</div> 
+				  @*@{var cname = Context.Session.GetString("hname"); }*@
+                                                     @{var role = Context.Session.GetString("role"); }
+                                                     @{var username = Context.Session.GetString("email"); }
+ @{
+        List<AddC> products = SessionHelper.GetObjectFromJson<List<AddC>>(Context.Session, "products");
+    }
+
+
 				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 					<ul class="nav navbar-nav ">
 						<li class=" active"><a asp-action="Index" asp-controller="Home" class="hyper "><span>Home</span></a></li>	
@@ -62,15 +75,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<div class="row">
 										<div class="col-sm-4">
 											<ul class="multi-column-dropdown">
-			
-												<li><a ><i class="fa fa-angle-right" aria-hidden="true"></i>Ethnicswear</a></li>
-												<li><a ><i class="fa fa-angle-right" aria-hidden="true"></i>Tops</a></li>
-												<li><a > <i class="fa fa-angle-right" aria-hidden="true"></i>Kurthas</a></li>
-												<li><a asp-controller="Women" asp-action="Westernwear"><i class="fa fa-angle-right" aria-hidden="true"></i>Westernwear</a></li>
-												<li><a ><i class="fa fa-angle-right" aria-hidden="true"></i>Pants</a></li>
-												<li><a ><i class="fa fa-angle-right" aria-hidden="true"></i>Jeans</a></li>
-												<li><a ><i class="fa fa-angle-right" aria-hidden="true"></i>Nightsuits</a></li>
+			@foreach(var c in products){
+@*												<li><a  ><i class="fa fa-angle-right" aria-hidden="true"></i>Ethnicswear</a></li>
+*@												
+                          <li><a asp-controller="Westernclothes" asp-action="Westernwear" asp-route-category="@c.cname"><i class="fa fa-angle-right" aria-hidden="true" asp-route-id= 2></i>@c.cname</a></li>
 												
+			}
+
+												@*<li><a asp-controller="Westernclothes" asp-action="Westernwear"><i class="fa fa-angle-right" aria-hidden="true"></i>Westernwear</a></li>
+												 
+											
+												<li><a ><i class="fa fa-angle-right" aria-hidden="true"></i>Nightsuits</a></li>
+												*@
 												
 										
 											</ul>
@@ -92,39 +108,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</div>	
 								</ul>
 						</li>
-						<li class="dropdown">
-								<a href="#" class="dropdown-toggle hyper" data-toggle="dropdown" ><span> Men <b class="caret"></b></span></a>
-								<ul class="dropdown-menu multi multi1">
-									<div class="row">
-										<div class="col-sm-4">
-											<ul class="multi-column-dropdown">
-												<li><a href="jewellery.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Jewellery </a></li>
-												<li><a href="watches.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Watches</a></li>
-												<li><a href="cosmetics.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Cosmetics</a></li>
-												<li><a href="deos.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Deo & Perfumes</a></li>
-										
-											</ul>
-											
-										</div>
-										<div class="col-sm-4">
-											
-											<ul class="multi-column-dropdown">
-												<li><a href="haircare.html"> <i class="fa fa-angle-right" aria-hidden="true"></i>Hair Care </a></li>
-												<li><a href="shoes.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Shoes</a></li>
-												<li><a href="handbags.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Handbags</a></li>
-												<li><a href="skincare.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Skin care</a></li>
-										
-											</ul>
-											
-										</div>
-										<div class="col-sm-4 w3l">
-											<a href="jewellery.html"><img src="~/style/images/menu2.jpg" class="img-responsive" alt=""></a>
-										</div>
-										<div class="clearfix"></div>
-									</div>	
-								</ul>
-								
-					    <li><a href="about.html" class="hyper"><span>Kids</span></a></li>
+						
 						<li><a asp-controller="Aboutus" asp-action="Aboutuss" class="hyper"><span>About</span></a></li>
 						<li><a asp-controller="Contactus" asp-action="Contactus" class="hyper"><span>Contact Us</span></a></li>
 					</ul>
@@ -146,19 +130,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				});
 				</script>
 		<div class="col-md-4 search-agileinfo">
-			<form action="#" method="post">
-				<input type="search" name="Search" placeholder="Search for a Product..." required="">
-				<button type="submit" class="btn btn-default search" aria-label="Left Align">
+			<form method="post" asp-controller="Home" asp-action="Index">
+				<input type="search" name="search" placeholder="Search for a Product..." required="">
+				<button type="submit" class="btn btn-default search" aria-label="Left Align" value="search">
 					<i class="fa fa-search" aria-hidden="true"> </i>
 				</button>
 			</form>
 		</div>
 		<div class="col-md-1 cart-wthree">
+			
 			<div class="cart"> 
 				<form action="#" method="post" class="last"> 
 					<input type="hidden" name="cmd" value="_cart" />
+
 					<input type="hidden" name="display" value="1" />
-					<button class="w3view-cart" type="submit" name="submit" value=""><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>
+					<button class="w3view-cart" type="submit" name="submit" value="" asp-controller="Cart" asp-action="cart" asp-route-username="@username"><i class="fa fa-cart-arrow-down" aria-hidden="true" ></i></button>
 				</form>  
 			</div>
 		</div>
@@ -215,10 +201,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="col-md-3 footer-grids fgd3">
 			<h4>Shop</h4> 
 			<ul>
-				<li><a href="jewellery.html">Jewellery</a></li>
-				<li><a href="cosmetics.html">Cosmetics</a></li>
-				<li><a href="Shoes.html">Shoes</a></li>
-				<li><a href="deos.html">Deos</a></li>
+				<li><a href="jewellery.html">Women Wear</a></li>
+				
 			</ul>
 		</div>
 		<div class="col-md-3 footer-grids fgd4">
@@ -226,7 +210,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<ul>
 				
 				<li><a asp-action="Loginuser" asp-controller="Register">Login</a></li>
-				<li><a asp-controller="Register" asp-action="Userregister">Register</a></li>
+				<li><a asp-controller="Registration" asp-action="registration">Register</a></li>
 				<li><a href="recommended.html">Recommended </a></li>
 				<li><a href="payment.html">Payments</a></li>
 			</ul>

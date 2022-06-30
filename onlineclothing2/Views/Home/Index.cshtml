@@ -1,4 +1,5 @@
-﻿@{
+﻿@model onlineclothing2.Models.Add	
+@{
     ViewData["Title"] = "Home Page";
 }
 <head>
@@ -26,32 +27,33 @@
 </div>
 <div class="banner-bootom-w3-agileits">
 	<div class="container">
-		<div class="col-md-5 bb-grids bb-left-agileits-w3layouts">
-			<a href="women.html"><div class="bb-left-agileits-w3layouts-inner">
-					<h3>SALE</h3>
-					<h4>upto<span>75%</span></h4>
-			</div></a>
-		</div>
-		<div class="col-md-4 bb-grids bb-middle-agileits-w3layouts">
-			<a href="shoes.html"><div class="bb-middle-top">
-				<h3>SALE</h3>
-				<h4>upto<span>55%</span></h4>
-			</div></a>
-			<a href="jewellery.html"><div class="bb-middle-bottom">
-				<h3>SALE</h3>
-				<h4>upto<span>65%</span></h4>
-			</div></a>
-		</div>
-		<div class="col-md-3 bb-grids bb-right-agileits-w3layouts">
-			<a href="watches.html"><div class="bb-right-top">
-				<h3>SALE</h3>
-				<h4>upto<span>50%</span></h4>
-			</div></a>
-			<a href="handbags.html"><div class="bb-right-bottom">
-				<h3>SALE</h3>
-				<h4>upto<span>60%</span></h4>
-			</div></a>
-		</div>
-		<div class="clearfix"></div>
+		@{
+			int i = 1;
+		}
+		@foreach(var p in ViewBag.d)
+	{
+		
+				<div class="col-md-4 women-grids wp1 animated wow slideInUp" data-wow-delay=".5s">
+					<div class="product-img">
+						<img src="@p.imgpath" asp-append-version="true"/> 
+						
+						<div class="p-mask">
+							<form action="#" method="post">
+								<input type="hidden" name="cmd" value="_cart" />
+								<input type="hidden" name="add" value="1" /> 
+								<input type="hidden" name="w3ls1_item" value="" /> 
+								<input type="hidden" name="amount" value="50.00" /> 
+								<button type="submit" class="w3ls-cart pw3ls-cart"  asp-controller="Single" asp-action="Singlepics" asp-route-id="@p.id"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
+							</form>
+						</div>
+
+					</div>
+					
+					<h4>@p.name</h4>
+					<h5>RS @p.price</h5>
+				</div>
+				i++;
+				}
+
 	</div>
 </div>
