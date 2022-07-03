@@ -32,5 +32,19 @@ namespace onlineclothing2.Controllers
             ViewBag.product = cartlist;*/
             return View();
         }
+
+        //[HttpGet]
+        //public IActionResult delete(int id)
+        //{
+        //    var d = dal.Testcarts.Find(id);
+        //    dal.Testcarts.Remove(d);
+        //    dal.SaveChanges();
+        //    //var data = dal.Testcarts.Find(id);
+        //    //dal.Testcarts.Remove(data);
+        //    //dal.SaveChanges();
+
+        //    return RedirectToAction("cart");
+        //}
+
     }
 }

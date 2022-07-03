@@ -29,10 +29,10 @@ namespace onlineclothing2.Models
 		//public DbSet<ProductImage> ProductImages { get; set; }
 		public DbSet<Add>? pcs { get; set; }
 		public DbSet<AddC>? cat { get; set; }
-		public DbSet<Testcart> Testcarts { get; set; }
+		public DbSet<Testcart> ?Testcarts { get; set; }
 
-		public DbSet<Userlogin> Userlogins { get; set; }
-		public DbSet<Checkout> check { get; set; }
+		public DbSet<Userlogin> ?Userlogins { get; set; }
+		public DbSet<Checkout> ?check { get; set; }
 
 
 
