@@ -16,5 +16,7 @@ namespace onlineclothing2.Models
         public string name { get; set; }
         public string category { get; set; }
 
+        //this is a comment
+
     }
 }
